@@ -29,3 +29,14 @@ a:visited {
   justify-content: center;
   cursor: pointer;
 }
+
+.dsmeta-container {
+  width: 100%;
+  max-width: 900px;
+  /*Com essas duas definições acima, quando a tela ficar menor que 900px, o conteúdo ocupará 100% da tela, mas quando a tela chegar os 900px, ela mantem-se neste tamanho e fica ao centro por conta da definição -> margin: 0 auto*/
+  margin: 0 auto;
+}
+#sales {
+  /*padding é o espaçamento interno*/
+  padding: 40px 10px;
+}

@@ -1,0 +1,104 @@
+.dsmeta-card {
+  background-color: #283142;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+
+.dsmeta-sales-title {
+  color: #676fff;
+  font-size: 24px;
+  font-weight: 28.13px;
+  margin-bottom: 20px;
+  margin-left: 16px;
+}
+
+.dsmeta-form-control-container {
+  margin-bottom: 16px;
+  max-width: 300px;
+}
+
+.dsmeta-form-control {
+  width: 100%;
+  height: 46px;
+
+  left: 20px;
+  top: 352px;
+  box-sizing: border-box;
+  background-color: #1b2531;
+  border: 1px solid #384459;
+  border-radius: 5px;
+
+  /*estilo de texto*/
+  color: #9aaabe;
+  padding: 0 20px; /*Espaçamento interno da caixa*/
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+}
+.dsmeta-sale-table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse:collapse ;
+}
+
+.dsmeta-sale-table thead {
+  height: 55px;
+  font-size: 16px;
+  color: #e9e9e9;
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+.dsmeta-sale-table tbody {
+  font-size: 14px;
+  font-weight: 400;
+  color: #cfcfcf;
+  text-align: center;
+}
+.dsmeta-sale-table tbody tr {
+  height: 74px;
+  border-top: 1px solid #5F6E82;
+}
+/*hover é quando passa o mause sobre o elemento*/
+.dsmeta-sale-table tbody tr:hover > td{
+  background-color: #384459;
+}
+/*nth-child() escolhe me qual filho será feito a estilização, nesse caso, foi definido nos impares (odd)*/
+.dsmeta-sale-table tbody tr:nth-child(odd) {
+  background-color: #242C3B;
+}
+
+.dsmeta-red-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.show576 {
+  display: none; /*Não vai mostrar nenhum conteúdo que estiver com essa clase*/
+}
+
+.show992 {
+  display: none;
+}
+/*comando para executar uma ação com a condição definida*/
+@media (min-width: 576px) {
+  .show576 {
+    display: table-cell; /*vai mostrar o conteúdo*/
+  }
+  .dsmeta-card {
+    padding: 35px;
+  }
+  .dsmeta-sale-table tbody tr {
+    height: 55px;
+  }
+  .dsmeta-sale-table tbody {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .show992 {
+    display: table-cell;
+  }
+}
